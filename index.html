@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Казино Stars</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Верхняя панель с логотипом, балансом и настройками -->
+  <header class="top-bar">
+    <div class="logo" onclick="goToHomePage()">🌟</div> <!-- Логотип, замените на свой -->
+    <div class="balance">
+      <span id="balanceAmount">500</span> ⭐
+    </div>
+    <div class="settings" onclick="openSettings()">⚙️</div>
+  </header>
+
+  <!-- Список кейсов -->
+  <div id="app">
+    <h2>Кейсы</h2>
+    <div class="case-list">
+      <div class="case-card" onclick="openCase(100)">
+        <img src="images/case1.png" alt="Cool Bus">
+        <p>Cool Bus</p>
+        <span class="price">100 ⭐</span>
+      </div>
+      <div class="case-card" onclick="openCase(500)">
+        <img src="images/case2.png" alt="AE86">
+        <p>AE86</p>
+        <span class="price">500 ⭐</span>
+      </div>
+      <div class="case-card" onclick="openCase(1000)">
+        <img src="images/case3.png" alt="Fast and Furious 39">
+        <p>Fast and Furious 39</p>
+        <span class="price">1000 ⭐</span>
+      </div>
+      <div class="case-card" onclick="openCase(5000)">
+        <img src="images/case4.png" alt="F1">
+        <p>F1</p>
+        <span class="price">5000 ⭐</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
